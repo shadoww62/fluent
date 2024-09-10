@@ -1,0 +1,20 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "catbypasser v1.5",
+    SubTitle = "by shadow62",
+    TabWidth = 150,
+    Size = UDim2.fromOffset(540, 390),
+    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Darker",
+    MinimizeKey = Enum.KeyCode.LeftControl -- Used when there's no MinimizeKeybind
+})
+
+local Tabs = {
+    Main = Window:AddTab({ Title = "Main", Icon = "" })
+}
+
+Tabs.Main:AddParagraph({
+    Title = "IMPORTANT",
+    Content = "Don't spam or else it'll tag the messages!"
+})
